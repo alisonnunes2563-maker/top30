@@ -1,0 +1,6 @@
+{
+  "name": "Top Academia | Desafio Top 30",
+  "description": "Landing page oficial do Desafio Top 30 da Top Academia. 30 dias para acelerar seus resultados com treino personalizado, plano alimentar e acompanhamento.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

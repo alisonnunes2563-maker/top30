@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-blood-red: #b91c1c;
+    --color-blood-dark: #7f1d1d;
+    --color-blood-vibrant: #dc2626;
+    --color-whatsapp: #25d366;
+    --color-whatsapp-hover: #22c55e;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #080808;
+    color: #f4f4f5;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: 'Barlow Condensed', 'Teko', sans-serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Subtle carbon mesh background for athletic intensity without heavy images */
+.bg-carbon-grid {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-radial-glow {
+  background: radial-gradient(circle at 50% 20%, rgba(185, 28, 28, 0.22) 0%, rgba(127, 29, 29, 0.08) 45%, transparent 75%);
+}
+
+.bg-radial-bottom-glow {
+  background: radial-gradient(circle at 50% 80%, rgba(185, 28, 28, 0.18) 0%, transparent 65%);
+}
+
+/* Shimmer animation for high-converting WhatsApp button */
+@keyframes whatsapp-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55), 0 10px 25px -5px rgba(37, 211, 102, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0), 0 15px 30px -5px rgba(37, 211, 102, 0.45);
+  }
+}
+
+.whatsapp-cta-glow {
+  animation: whatsapp-pulse 2.8s infinite;
+}
+
+/* High contrast text wrap balance for conversion headlines */
+.text-balance {
+  text-wrap: balance;
+}
